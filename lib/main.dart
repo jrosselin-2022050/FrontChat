@@ -36,7 +36,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   void connectToServer() {
     // Conectarse al servidor Socket.io
-    socket = IO.io('http://localhost:3000', <String, dynamic>{
+    socket = IO.io('https://chat-prueba-cloud.vercel.app/', <String, dynamic>{
       'transports': ['websocket'],
       'autoConnect': false,
     });
